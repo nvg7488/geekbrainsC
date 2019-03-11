@@ -20,8 +20,9 @@
 		scanf("%d", &lvl);
 	return lvl;}
 	
-	void homework_21(int);
-	int homework_22a(int, int); int homework_22b(int, int);
+	void homework_21(long, unsigned);
+	int homework_22a(int, int);
+	int homework_22b(int, int);
 	void homework_23(int, int);
 	
 int main(){
@@ -85,7 +86,7 @@ int main(){
 	}	while (homework != 0);
 return 0;}
 
-	void homework_21(uint32_t num, unsigned d){	
+	void homework_21(long num, unsigned d){	
 //		Реализовать функцию перевода из 10 системы в двоичную используя рекурсию.
 		if (! d) return;
 		else {
