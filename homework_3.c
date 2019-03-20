@@ -13,7 +13,7 @@ int main() { unsigned N = 10, arr [N], x = 13;
 	if (ind == -1)
 				printf("\n\tзначение %u не найдено", x);
 		else	printf("\n\tзначение %u найдено в ячейке %u", x, ind);
-printf ("\nГоворухин Николай, homework 2"); return 0;}
+printf ("\nГоворухин Николай, homework 3"); return 0;}
 	void bubble(unsigned * arr, const unsigned num){
 		unsigned temp;
 		for (unsigned v = 0; v < num; v++)
