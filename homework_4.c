@@ -58,14 +58,13 @@ return 0;}
 
 	void homework_33(int x, int y, int z) {
 		chessboard[x][y] = z;
-		if ((x > 0) && (y > 1) && (chessboard[x - 1][y - 2] == 0)) { kol++; homework_33(x - 1, y - 2, z + 1); }   //   1
-		if ((x < 7) && (y > 1) && (chessboard[x + 1][y - 2] == 0)) { kol++; homework_33(x + 1, y - 2, z + 1); }   //   2
-		if ((x < 7) && (y > 0) && (chessboard[x + 2][y - 1] == 0)) { kol++; homework_33(x + 2, y - 1, z + 1); }   //   3
-		if ((x < 7) && (y < 7) && (chessboard[x + 2][y + 1] == 0)) { kol++; homework_33(x + 2, y + 1, z + 1); }   //   4
-//		if ((x) && (y) && (chessboard[x][y] == 0)) { kol++; homework_33(x, y, z + 1); }   //   5
-//		if ((x) && (y) && (chessboard[x][y] == 0)) { kol++; homework_33(x, y, z + 1); }   //   6
-//		if ((x) && (y) && (chessboard[x][y] == 0)) { kol++; homework_33(x, y, z + 1); }   //   7
-//		if ((x) && (y) && (chessboard[x][y] == 0)) { kol++; homework_33(x, y, z + 1); }   //   8
-//		&& (z == 64)
+		if ((x > 0) && (y > 1) && (chessboard[x - 1][y - 2] == 0) && (z == 64)) { kol++; homework_33(x - 1, y - 2, z + 1); }   //   1
+		if ((x < 7) && (y > 1) && (chessboard[x + 1][y - 2] == 0) && (z == 64)) { kol++; homework_33(x + 1, y - 2, z + 1); }   //   2
+		if ((x < 7) && (y > 0) && (chessboard[x + 2][y - 1] == 0) && (z == 64)) { kol++; homework_33(x + 2, y - 1, z + 1); }   //   3
+		if ((x < 7) && (y < 7) && (chessboard[x + 2][y + 1] == 0) && (z == 64)) { kol++; homework_33(x + 2, y + 1, z + 1); }   //   4
+		if ((x < 7) && (y < 6) && (chessboard[x + 1][y + 2] == 0) && (z == 64)) { kol++; homework_33(x + 1, y + 2, z + 1); }   //   5
+		if ((x > 0) && (y < 6) && (chessboard[x - 1][y + 2] == 0) && (z == 64)) { kol++; homework_33(x - 1, y + 2, z + 1); }   //   6
+		if ((x > 1) && (y > 0) && (chessboard[x - 2][y - 1] == 0) && (z == 64)) { kol++; homework_33(x - 2, y - 1, z + 1); }   //   7
+		if ((x < 6) && (y > 0) && (chessboard[x + 2][y + 1] == 0) && (z == 64)) { kol++; homework_33(x + 2, y + 1, z + 1); }   //   8
 		chessboard[x][y] = 0;
 	}
